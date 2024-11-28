@@ -7,7 +7,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>{% block title %}{% endblock %} | La Caffettiera</title>
+		<title>{% block title %}{% endblock %} | the orange copy</title>
 
 		{% load static %}
 
@@ -23,14 +23,14 @@
 	</head>
 	<body>
 		<h1 class="site-heading text-center text-white d-none d-lg-block">
-			<span class="site-heading-upper text-primary mb-3">L'autentico caffè d'italia</span>
-			<span class="site-heading-lower">La Caffettiera</span>
+			<span class="site-heading-upper text-primary mb-3">IMPRIMIMOS, ROTULAMOS Y DECORAMOS</span>
+			<span class="site-heading-lower">the orange copy</span>
 		</h1>
 
 		<!-- Navegación -->
 		<nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
 			<div class="container">
-				<a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}">La Caffettiera</a>
+				<a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'home' %}">the orange copy</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -40,10 +40,10 @@
 							<a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
 						</li>
 						<li class="nav-item px-lg-4 {% if request.path == '/about/' %}active{% endif %}">
-							<a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">Historia</a>
+							<a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">NOSOTROS</a>
 						</li>
 						<li class="nav-item px-lg-4 {% if request.path == '/services/' %}active{% endif %}">
-							<a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">Servicios</a>
+							<a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">PRODUCTOS</a>
 						</li>
 						<li class="nav-item px-lg-4 {% if request.path == '/store/' %}active{% endif %}">
 							<a class="nav-link text-uppercase text-expanded" href="{% url 'store' %}">Visítanos</a>
@@ -100,7 +100,7 @@
 					{% if not forloop.last %}·{% endif %}
 					{% endfor %}
 		</p>
-				<p class="m-0 mbt1">&copy; La Caffettiera 2018</p>
+				<p class="m-0 mbt1">&copy; the orange copy 2018</p>
 			</div>
 	</footer>
 

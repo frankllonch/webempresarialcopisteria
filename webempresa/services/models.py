@@ -11,7 +11,7 @@ class Service(models.Model):
 
     class Meta:
         verbose_name = "servicio"
-        verbose_name_plural = "servicios"
+        verbose_name_plural = "PRODUCTOS"
         ordering = ["-created"]
 
     def __str__(self):
