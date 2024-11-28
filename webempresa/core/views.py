@@ -6,24 +6,24 @@ def home(request):
 
 
 def about(request):
-    return HttpResponse("Historia")
+    return render(request, "core/Historia")
 
 
 def services(request):
-    return HttpResponse("Servicios")
+    return render(request, "core/Servicios.html")
 
 
 def store(request):
-    return HttpResponse("Visítanos")
+    return render(request, "core/Visítanos.html")
 
 
 def contact(request):
-    return HttpResponse("Contacto")
+    return render(request, "core/Contacto.html")
 
 
 def blog(request):
-    return HttpResponse("Blog")
+    return render(request, "core/Blog.html")
 
 
 def sample(request):
-    return HttpResponse("Sample")
+    return render(request, "core/Sample.html")
