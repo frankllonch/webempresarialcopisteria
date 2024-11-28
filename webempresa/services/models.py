@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Service(models.Model):
     title = models.CharField(max_length=200, verbose_name="Título")
     subtitle = models.CharField(max_length=200, verbose_name="Subtítulo")
@@ -11,7 +12,7 @@ class Service(models.Model):
     class Meta:
         verbose_name = "servicio"
         verbose_name_plural = "servicios"
-        ordering = ['-created']
+        ordering = ["-created"]
 
     def __str__(self):
         return self.title
