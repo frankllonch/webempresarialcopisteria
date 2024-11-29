@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}{{category}}{% endblock %}
 {% block content %}
- {% for post in category.posts_set.all %}
+ {% for post in posts_set.all %}
     <section class="page-section cta">
          <div class="container">
             <div class="row">
@@ -36,3 +36,6 @@
         </section>
         {% endfor %}
 {% endblock %}
+
+
+
