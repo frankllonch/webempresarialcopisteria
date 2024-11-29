@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lora';
+  font-family: 'Raleway';
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/black.png");
   background-attachment: fixed;
   background-position: center;
@@ -46,7 +46,7 @@ p {
 .page-section {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  color : #fff;
+  color : #000000;
 }
 
 .section-heading {
@@ -261,8 +261,8 @@ p {
 }
 
 .btn-primary {
-  background-color: #6ed70c;
-  border-color: #60b70f;
+  background-color: #000000;
+  border-color: #ffffff;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
@@ -296,7 +296,7 @@ a.link:hover{
 }
 
 .section-content{
-  font-family: 'Lora' !important;
+  font-family: 'Raleway' !important;
   font-size: 16px !important;
   font-weight: 400 !important;
   line-height: 28px !important;
@@ -307,3 +307,59 @@ ul.errorlist{
   font-style: italic;
   color: red;
 }
+
+/* General container adjustments */
+.product-card {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically if needed */
+  border: 1px solid #000000; /* Subtle border */
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: #000000;
+  text-align: center; /* Ensures text is centered */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slight hover effect */
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+/* Product image styling */
+.product-image img {
+  width: 100%;
+  height: 250px; /* Ensures a consistent height */
+  object-fit: cover; /* Keeps the image within bounds */
+  border-radius: 8px;
+}
+
+/* Title styling */
+.product-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color:#ffffff
+}
+
+/* Subtitle styling */
+.product-subtitle {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+/* Grid adjustments */
+.row {
+  gap: 1rem; /* Adds space between columns */
+}
+
+
+/* Center grid items in row */
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping in smaller screens */
+  justify-content: center; /* Horizontally center grid items */
+  gap: 1rem; /* Adds space between columns */
+}
+
