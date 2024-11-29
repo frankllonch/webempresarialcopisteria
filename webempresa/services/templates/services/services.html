@@ -8,16 +8,16 @@
         <div class="row">
             {% for service in services %}
             <div class="col-md-3 col-sm-6 mb-4"> <!-- Four items per row on medium+ screens -->
-                <div class="product-card text-center">
+                <div class="product-card position-relative">
                     <!-- Image -->
                     {% if service.image %}
                     <div class="product-image">
-                        <img src="{{ service.image.url }}" alt="{{ service.title }}" class="img-fluid rounded">
+                        <img src="{{ service.image.url }}" alt="{{ service.title }}" class="img-fluid">
                     </div>
                     {% endif %}
 
-                    <!-- Text -->
-                    <div class="product-info mt-3">
+                    <!-- Hidden Text -->
+                    <div class="product-overlay text-center">
                         <h5 class="product-title">{{ service.title }}</h5>
                         <p class="product-subtitle text-muted">{{ service.subtitle }}</p>
                     </div>

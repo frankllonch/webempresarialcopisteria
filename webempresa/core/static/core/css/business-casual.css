@@ -1,365 +1,930 @@
+/* 
+===========================================
+Global Styles
+===========================================
+*/
+
+/* General body styling */
 body {
-  font-family: 'Raleway';
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/black.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  font-family: ' Helvetica'; /* Global font family */
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/black.png"); /* Gradient with background image */
+  background-attachment: fixed; /* Fixes background during scrolling */
+  background-position: center; /* Centers the background */
+  background-size: cover; /* Ensures the background image fills the viewport */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Raleway';
+/* Unified heading font styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit; /* Inherits the global font */
 }
 
+/* General paragraph styling */
 p {
-  line-height: 1.75;
+  line-height: 1.75; /* Improved readability with increased line height */
 }
 
+/* Faded text style */
 .text-faded {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3); /* Semi-transparent white for faded effect */
 }
+
+/* 
+===========================================
+Site Heading Styles
+===========================================
+*/
 
 .site-heading {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  text-transform: uppercase;
-  line-height: 1;
-  font-family: 'Raleway';
+  margin: 5rem 0; /* Adds large spacing above and below */
+  text-transform: uppercase; /* Uppercase for bold emphasis */
+  line-height: 1; /* Compact spacing */
+  font-family: ' Helvetica'; /* Heading-specific font */
 }
 
 .site-heading .site-heading-upper {
-  display: block;
-  font-size: 2rem;
-  font-weight: 800;
+  display: block; /* Forces text onto a new line */
+  font-size: 2rem; /* Medium-large font size */
+  font-weight: 800; /* Extra-bold for emphasis */
 }
 
 .site-heading .site-heading-lower {
-  font-size: 5rem;
-  font-weight: 100;
-  line-height: 4rem;
+  font-size: 5rem; /* Very large font for prominence */
+  font-weight: 100; /* Thin font weight for modern look */
+  line-height: 4rem; /* Adjusts line spacing */
 }
 
+/* 
+===========================================
+Section and Subheading Styles
+===========================================
+*/
+
 .page-section {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  color : #000000;
+  margin: 5rem 0; /* Adds consistent spacing above and below */
+  color: #000; /* Default black text for sections */
 }
 
 .section-heading {
-  text-transform: uppercase;
+  text-transform: uppercase; /* Converts all heading text to uppercase */
 }
 
 .section-heading .section-heading-upper {
-  display: block;
-  font-size: 1rem;
-  font-weight: 800;
-  padding-bottom:.5rem;
-
+  display: block; /* Forces text onto a new line */
+  font-size: 1rem; /* Small font for subtle emphasis */
+  font-weight: 800; /* Bold text for prominence */
+  padding-bottom: 0.5rem; /* Adds spacing below */
 }
 
 .section-heading .section-heading-lower {
-  display: block;
-  font-size: 3rem;
-  font-weight: 100;
+  display: block; /* Forces text onto a new line */
+  font-size: 3rem; /* Large font for major headings */
+  font-weight: 100; /* Thin font for a modern look */
 }
-
 
 .section-heading .section-heading-under {
-  display: block;
-  font-size: 1rem;
-  text-transform: none;
-  font-weight: 300;
-  margin-top:.5rem;
+  display: block; /* Forces text onto a new line */
+  font-size: 1rem; /* Small font for secondary emphasis */
+  text-transform: none; /* Keeps original text casing */
+  font-weight: 300; /* Light font weight */
+  margin-top: 0.5rem; /* Adds spacing above */
 }
 
+/* 
+===========================================
+Background and Highlighted Styles
+===========================================
+*/
+
+/* Faded background sections */
 .bg-faded {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
 }
+
+/* 
+===========================================
+Navigation Bar Styles
+===========================================
+*/
 
 #mainNav {
-  background-color: rgba(0, 0, 0, 0.9);
-  font-family: 'Raleway';
+  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black navbar */
+  font-family: ' Helvetica'; /* Consistent navigation font */
 }
 
 #mainNav .navbar-brand {
-  color: #1bc20c;
+  color: #1bc20c; /* Bright green branding */
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.7);
-  font-weight: 800;
+  color: rgba(255, 255, 255, 0.7); /* Semi-transparent white links */
+  font-weight: 800; /* Bold links for visibility */
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #10bc07;
+  color: #10bc07; /* Bright green for active links */
 }
 
+/* Navigation link hover effects for larger screens */
 @media (min-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Slightly smaller font for links */
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4); /* Dimmed white on hover */
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
+    color: #e6a756; /* Highlighted color for active link hover */
   }
 }
 
+/* 
+===========================================
+Background and Faded Styling
+===========================================
+*/
+
+/* Semi-transparent background for faded sections */
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.85); /* Creates a semi-transparent white background */
+}
+
+/* 
+===========================================
+Navigation Bar Styling
+===========================================
+*/
+
+/* Main navigation bar styling */
+#mainNav {
+  background-color: rgba(0, 0, 0, 0.9); /* Adds a semi-transparent black background */
+  font-family: ' Helvetica'; /* Uses the ' Helvetica' font for navigation text */
+}
+
+#mainNav .navbar-brand {
+  color: #1bc20c; /* Sets the navigation brand text to a bright green color */
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.7); /* Sets the navigation link color to semi-transparent white */
+  font-weight: 800; /* Makes the link text bold for emphasis */
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+  color: #10bc07; /* Highlights the active link in a bright green color */
+}
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem; /* Reduces the font size for a compact design */
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255, 255, 255, 0.4); /* Fades the link color on hover */
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: #e6a756; /* Changes the active link hover color to a golden yellow */
+  }
+}
+
+/* 
+===========================================
+Button Styling
+===========================================
+*/
+
+/* Extra-large button styling */
 .btn-xl {
-  font-weight: 700;
-  font-size: 0.8rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  font-weight: 700; /* Makes the button text bold */
+  font-size: 0.8rem; /* Sets a medium font size */
+  padding-top: 1.5rem; /* Adds padding to the top */
+  padding-bottom: 1.5rem; /* Adds padding to the bottom */
+  padding-left: 2rem; /* Adds padding to the left */
+  padding-right: 2rem; /* Adds padding to the right */
 }
 
+/* 
+===========================================
+Intro Section Styling
+===========================================
+*/
+
+/* Intro section base styling */
 .intro {
-  position: relative;
+  position: relative; /* Positions elements relative to their container */
 }
 
+/* Media query for small screens */
 @media (min-width: 300px) {
   .intro .intro-img {
-    width: 75%;
-    float: right;
+    width: 75%; /* Limits the image width to 75% of the container */
+    float: right; /* Floats the image to the right side */
   }
   .intro .intro-text {
-    left: 0;
-    width: 30%;
-    margin-top: 3rem;
-    position: absolute;
+    left: 0; /* Aligns the text to the left */
+    width: 30%; /* Sets the text width to 30% of the container */
+    margin-top: 3rem; /* Adds a margin at the top */
+    position: absolute; /* Positions the text absolutely within its parent container */
   }
   .intro .intro-text .intro-button {
-    width: 30%;
-    left: 0;
-    position: absolute;
-    bottom: -2rem;
+    width: 30%; /* Sets the button width to 30% */
+    left: 0; /* Aligns the button to the left */
+    position: absolute; /* Positions the button absolutely */
+    bottom: -2rem; /* Moves the button slightly below the section */
   }
 }
 
+/* Media query for extra large screens */
 @media (min-width: 1200px) {
   .intro .intro-text {
-    width: 45%;
+    width: 45%; /* Increases the text width to 45% for larger screens */
   }
 }
 
+/* 
+===========================================
+Call-to-Action Section Styling
+===========================================
+*/
+
+/* Call-to-action section base styling */
 .cta {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: rgba(41, 219, 9, 0.9);
+  padding-top: 5rem; /* Adds padding at the top */
+  padding-bottom: 5rem; /* Adds padding at the bottom */
+  background-color: rgba(41, 219, 9, 0.9); /* Creates a semi-transparent bright green background */
 }
 
 .cta .cta-inner {
-  position: relative;
-  padding: 5rem;
-  margin: 3.0rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  position: relative; /* Positions elements relative to their container */
+  padding: 5rem; /* Adds padding inside the container */
+  margin: 3rem; /* Adds a margin around the container */
+  background-color: rgba(255, 255, 255, 0.85); /* Creates a semi-transparent white background */
 }
 
 .cta .cta-inner:before {
-  border-radius: 0.5rem;
-  content: '';
-  position: absolute;
-  top: -0.5rem;
-  bottom: -0.5rem;
-  left: -0.5rem;
-  right: -0.5rem;
-  border: 0rem solid rgba(255, 255, 255, 0.85);
+  border-radius: 0.5rem; /* Adds rounded corners */
+  content: ''; /* Adds a pseudo-element with no content */
+  position: absolute; /* Positions the pseudo-element absolutely within the container */
+  top: -0.5rem; /* Positions the top edge slightly outside the container */
+  bottom: -0.5rem; /* Positions the bottom edge slightly outside the container */
+  left: -0.5rem; /* Positions the left edge slightly outside the container */
+  right: -0.5rem; /* Positions the right edge slightly outside the container */
+  border: 0rem solid rgba(255, 255, 255, 0.85); /* Adds a semi-transparent white border */
 }
 
+/* Styling for nested call-to-action inner content */
 .cta .cta-innerv {
-  position: relative;
-  padding: 3rem;
-  margin: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.85);
+  position: relative; /* Positions elements relative to their container */
+  padding: 3rem; /* Adds padding inside the container */
+  margin: 0.5rem; /* Adds a small margin around the container */
+  background-color: rgba(255, 255, 255, 0.85); /* Creates a semi-transparent white background */
 }
+
+/* 
+===========================================
+Media Query for About Heading (Large Screens)
+===========================================
+*/
 
 @media (min-width: 992px) {
   .about-heading {
-    text-align: center; /* Centers inline and inline-block elements */
+    text-align: center; /* Centers the text within the heading */
   }
 
   .about-heading .about-heading-img {
-    position: relative;
-    width: 74%;
-    z-index: 0;
-    margin: 0 auto; /* Ensures block-level centering */
+    position: relative; /* Positions the image relative to its parent */
+    width: 74%; /* Sets the image width to 74% of its container */
+    z-index: 0; /* Ensures the image is behind other elements */
+    margin: 0 auto; /* Centers the image horizontally */
   }
 
   .about-heading .about-heading-content {
-    margin-top: -5rem;
-    position: relative;
-    z-index: 1;
+    margin-top: -5rem; /* Moves the content up by 5rem */
+    position: relative; /* Ensures the content stays within its parent */
+    z-index: 1; /* Ensures the content is above the image */
   }
 }
+
+/* 
+===========================================
+Media Query for Product Items (Large Screens)
+===========================================
+*/
 
 @media (min-width: 992px) {
   .product-item .product-item-title {
-    position: relative;
-    z-index: 1;
-    margin-bottom: -3rem;
+    position: relative; /* Positions the title relative to its parent */
+    z-index: 1; /* Ensures the title is on top */
+    margin-bottom: -3rem; /* Moves the title closer to the image below */
   }
   .product-item .product-item-img {
-    position: relative;
-    z-index: 0;
-    max-width: 60vw;
+    position: relative; /* Positions the image relative to its parent */
+    z-index: 0; /* Ensures the image is behind other elements */
+    max-width: 60vw; /* Sets the maximum width of the image to 60% of the viewport */
   }
   .product-item .product-item-description {
-    position: relative;
-    z-index: 1;
-    margin-top: -3rem;
-    max-width: 50vw;
+    position: relative; /* Positions the description relative to its parent */
+    z-index: 1; /* Ensures the description is on top */
+    margin-top: -3rem; /* Moves the description closer to the image */
+    max-width: 50vw; /* Limits the description width to 50% of the viewport */
   }
 }
 
+/* 
+===========================================
+Styling for List of Hours
+===========================================
+*/
+
 .list-hours {
-  font-size: 0.9rem;
+  font-size: 0.9rem; /* Sets a small font size for the list */
 }
 
 .list-hours .list-hours-item {
-  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
-  padding-bottom: .25rem;
-  margin-bottom: 1rem;
-  font-style: italic;
+  border-bottom: 1px solid rgba(230, 167, 86, 0.5); /* Adds a semi-transparent bottom border */
+  padding-bottom: 0.25rem; /* Adds padding below each item */
+  margin-bottom: 1rem; /* Adds spacing between list items */
+  font-style: italic; /* Styles the text in italics */
 }
 
 .list-hours .list-hours-item.today {
-  font-weight: bold;
-  color: #b1e656;
+  font-weight: bold; /* Highlights the current day in bold */
+  color: #b1e656; /* Uses a bright green color for emphasis */
 }
 
+/* Media Query for Larger Screens */
 @media (min-width: 992px) {
   .list-hours {
-    width: 50%;
-    font-size: 1.1rem;
+    width: 50%; /* Sets the width of the list to half the container */
+    font-size: 1.1rem; /* Increases the font size for better readability */
   }
 }
 
+/* 
+===========================================
+Styling for Address
+===========================================
+*/
+
 .address strong {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Makes the text slightly larger for emphasis */
 }
+
+/* 
+===========================================
+Footer Styling
+===========================================
+*/
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9); /* Sets a semi-transparent black background */
 }
 
+/* 
+===========================================
+Primary Color and Background Styling
+===========================================
+*/
+
 .text-primary {
-  color: #9ce656 !important;
+  color: #9ce656 !important; /* Highlights text with a bright green color */
 }
 
 .bg-primary {
-  background-color: #88e656 !important;
+  background-color: #88e656 !important; /* Sets a green background */
 }
 
+/* 
+===========================================
+Button Styling
+===========================================
+*/
+
+/* General button styling */
 .btn {
-  box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+  box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1); /* Adds a subtle shadow for depth */
 }
 
+/* Primary button styling */
 .btn-primary {
-  background-color: #000000;
-  border-color: #ffffff;
+  background-color: #000000; /* Sets a black background */
+  border-color: #ffffff; /* Adds a white border */
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #58c70f;
-  border-color: #85c713;
+  background-color: #58c70f; /* Bright green on hover, focus, or active states */
+  border-color: #85c713; /* Adjusts the border to a lighter green */
 }
 
+/* 
+===========================================
+Font Weight and Margins
+===========================================
+*/
+
+/* Light font weight styling */
 .font-weight-light {
-  font-weight: 100 !important;
+  font-weight: 100 !important; /* Ensures very thin text styling */
 }
 
-.mbtm{
-  padding-top: 5rem;
+/* Classes for managing top padding */
+.mbtm {
+  padding-top: 5rem; /* Adds significant top padding */
 }
 
-.mbt{
-  padding-top: 2rem;
+.mbt {
+  padding-top: 2rem; /* Adds medium top padding */
 }
 
-.mbt1{
-  padding-top: 1.25rem;
+.mbt1 {
+  padding-top: 1.25rem; /* Adds small top padding */
 }
 
-a.link{
-  color: #519629;
+/* 
+===========================================
+Link Styling
+===========================================
+*/
+
+/* General link styling */
+a.link {
+  color: #519629; /* Sets a green color for links */
 }
 
-a.link:hover{
-  text-decoration: none;
-  color: #20a042 !important;
+a.link:hover {
+  text-decoration: none; /* Removes underline on hover */
+  color: #20a042 !important; /* Changes the hover color to a darker green */
 }
 
-.section-content{
-  font-family: 'Raleway' !important;
-  font-size: 16px !important;
-  font-weight: 400 !important;
-  line-height: 28px !important;
+/* 
+===========================================
+Section Content Styling
+===========================================
+*/
+
+.section-content {
+  font-family: ' Helvetica' !important; /* Ensures content uses ' Helvetica' font */
+  font-size: 16px !important; /* Sets a standard font size */
+  font-weight: 400 !important; /* Uses a regular font weight */
+  line-height: 28px !important; /* Adds generous spacing between lines */
 }
 
-ul.errorlist{
-  padding-top: .75rem;
-  font-style: italic;
-  color: red;
+/* 
+===========================================
+Error List Styling
+===========================================
+*/
+
+ul.errorlist {
+  padding-top: 0.75rem; /* Adds padding to the top of the list */
+  font-style: italic; /* Styles the error messages in italics */
+  color: red; /* Highlights errors in red */
 }
 
-/* General container adjustments */
+/* General Grid Layout */
 .product-card {
-  display: flex;
-  flex-direction: column; /* Stack image and text vertically */
-  align-items: center; /* Center the content horizontally */
-  justify-content: center; /* Center the content vertically if needed */
-  border: 1px solid #000000; /* Subtle border */
-  padding: 1rem;
-  border-radius: 8px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  background-color: #000000;
-  text-align: center; /* Ensures text is centered */
+    position: relative;
+    width: 100%;
+    height: 250px; /* Ensures all cards are square-shaped */
+    overflow: hidden; /* Hides the overlay initially */
+    border: none; /* Remove any border */
 }
 
-.product-card:hover {
-  transform: scale(1.05); /* Slight hover effect */
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
-}
-
-/* Product image styling */
 .product-image img {
-  width: 100%;
-  height: 250px; /* Ensures a consistent height */
-  object-fit: cover; /* Keeps the image within bounds */
-  border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits neatly */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
 }
 
-/* Title styling */
+/* Remove Spacing Between Grid Items */
+.row {
+    margin: 0; /* Remove default row margin */
+}
+
+.row .col-md-3, .row .col-sm-6 {
+    padding: 0; /* Remove padding between columns */
+    margin-bottom: 0; /* Remove space below each card */
+}
+
+/* Overlay Text (Hidden by Default) */
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+/* Text Styling */
 .product-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin-bottom: 0.3rem;
-  color:#ffffff
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-/* Subtitle styling */
 .product-subtitle {
-  font-size: 0.9rem;
-  color: #ffffff;
+    font-size: 0.9rem;
 }
 
-/* Grid adjustments */
-.row {
-  gap: 1rem; /* Adds space between columns */
+/* Hover Effect */
+.product-card:hover .product-image img {
+    transform: scale(1.1); /* Zoom effect on image */
 }
 
+.product-card:hover .product-overlay {
+    opacity: 1; /* Reveal the overlay on hover */
+}
 
-/* Center grid items in row */
-.row {
+/* About Us Section Styling */
+.about-us {
+  display: flex; /* Creates a horizontal layout */
+  align-items: center; /* Vertically aligns content */
+  justify-content: space-between; /* Adds space between text and image */
+  padding: 1rem; /* Adds padding around the section */
+  background-color: #000; /* Sets the section background to black */
+  color: #fff; /* Ensures the text is white */
+  min-height: 50vh; /* Makes the section fill the viewport height */
+  box-sizing: border-box; /* Includes padding in width/height calculations */
+}
+
+/* Content (Text) Styling */
+.about-content {
+  flex: 1; /* Makes the text container take up equal space */
+  max-width: 50%; /* Limits the text container to 50% of the section */
+  text-align: left; /* Aligns text to the left */
+  padding-right: 2rem; /* Adds spacing to the right of the text */
+}
+
+.about-content .section-heading-upper {
+  font-size: 1.5rem; /* Slightly smaller for the subtitle */
+  font-weight: bold; /* Makes the subtitle bold */
+  margin-bottom: 1rem; /* Adds spacing below the subtitle */
+  text-transform: uppercase; /* Converts subtitle text to uppercase */
+}
+
+.about-content .section-heading-lower {
+  font-size: 3rem; /* Larger font size for the main title */
+  font-weight: bold; /* Makes the main title bold */
+  margin-bottom: 1.5rem; /* Adds spacing below the main title */
+  text-transform: : uppercase; /* Converts main title text to uppercase */
+}
+
+.about-content p {
+  font-size: 1rem; /* Standard readable font size */
+  line-height: 1.75; /* Adds spacing between lines */
+  margin-bottom: 1rem; /* Adds spacing between paragraphs */
+}
+
+/* Image Styling */
+.about-image {
+  flex: 1; /* Ensures the image takes equal space */
+  display: flex; /* Allows alignment within the image container */
+  justify-content: center; /* Centers the image horizontally */
+}
+
+.about-image img {
+  width: 100%; /* Ensures the image fills its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: cover; /* Crops the image gracefully if needed */
+  border-radius: 0; /* Removes rounded corners */
+}
+
+/* Styling for the Visit Us Section */
+.visit-us {
+  background-color: #000; /* Sets a black background for the section */
+  color: #fff; /* Ensures text is white */
+  padding: 3rem; /* Adds spacing around the section */
+  min-height: 10vh; /* Ensures the section takes up full viewport height */
+  display: flex; /* Creates a flex layout for the image and text */
+  align-items: center; /* Centers content vertically */
+  justify-content: space-between; /* Adds space between image and text */
+}
+
+/* Container for image and text */
+.visit-container {
+  display: flex; /* Creates a horizontal layout */
+  gap: 2rem; /* Adds space between the image and text */
+  width: 100%; /* Ensures the container spans the section */
+}
+
+/* Left Side: Image Styling */
+.visit-image {
+  flex: 1; /* Allows the image to take equal space */
+  max-width: 50%; /* Limits the image container to half the section */
+}
+
+.visit-image img {
+  width: 100%; /* Ensures the image fills its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 0.5rem; /* Adds subtle rounding to image corners */
+  object-fit: cover; /* Ensures the image fits nicely */
+}
+
+/* Right Side: Text Styling */
+.visit-content {
+  flex: 1; /* Allows the text container to take equal space */
+  max-width: 50%; /* Limits the text container to half the section */
+}
+
+.visit-content h2 {
+  margin-bottom: 2rem; /* Adds space below the heading */
+}
+
+.section-heading-upper {
+  display: block; /* Forces text onto a new line */
+  font-size: 1.5rem; /* Sets the font size for the subtitle */
+  text-transform: uppercase; /* Converts text to uppercase */
+  margin-bottom: 0.5rem; /* Adds space below the subtitle */
+}
+
+.section-heading-lower {
+  display: block; /* Forces text onto a new line */
+  font-size: 3rem; /* Sets the font size for the main heading */
+  font-weight: bold; /* Makes the text bold */
+  margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+/* List Styling */
+.list-hours {
+  list-style: none; /* Removes bullet points from the list */
+  padding: 0; /* Removes padding */
+  margin: 0 0 2rem; /* Adds space below the list */
+}
+
+.list-hours-item {
+  display: flex; /* Creates a horizontal layout for list items */
+  justify-content: space-between; /* Aligns text and times on opposite sides */
+  margin-bottom: 0.5rem; /* Adds spacing between items */
+}
+
+.list-hours-item span {
+  font-weight: bold; /* Highlights the timings */
+}
+
+/* Address Styling */
+.address {
+  margin-bottom: 1.5rem; /* Adds spacing below the address */
+  font-style: italic; /* Styles the address in italics */
+}
+
+.address strong {
+  font-weight: bold; /* Highlights the location */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .visit-container {
+    flex-direction: column; /* Stacks the image and text vertically */
+    align-items: center; /* Centers the content */
+  }
+
+  .visit-image, .visit-content {
+    max-width: 100%; /* Allows both sections to take full width */
+  }
+
+  .visit-image {
+    margin-bottom: 2rem; /* Adds space below the image */
+  }
+}
+
+/* General Contact Section Styling */
+.contact-section {
+  display: flex; /* Horizontal layout for image and form */
+  align-items: center; /* Vertically centers content */
+  justify-content: space-between; /* Space between image and form */
+  padding: 3rem; /* Adds spacing around the section */
+  background-color: #000; /* Sets a black background */
+  color: #fff; /* Ensures text is white */
+  min-height: 10vh; /* Fills the entire viewport height */
+}
+
+/* Right: Form Styling */
+.contact-form {
+  flex: 1; /* Takes up half of the section */
+  max-width: 500%; /* Limits the form container to 50% */
+  padding: 2rem; /* Adds internal spacing for the form */
+}
+
+.contact-form h2 {
+  margin-bottom: 2rem; /* Adds space below the heading */
+  text-align: left; /* Aligns the heading to the left */
+  max-width: 500%;
+}
+
+/* Input Fields Styling */
+.form-group {
+  margin-bottom: 1.5rem; /* Adds spacing between form fields */
+}
+
+.form-group label {
+  font-size: 1rem; /* Makes labels readable */
+  font-weight: bold; /* Highlights the label text */
+  display: block; /* Ensures labels appear above the input */
+  margin-bottom: 0.5rem; /* Adds space below the label */
+}
+
+.input-group {
+  display: block; /* Ensures input spans the full width */
+  max-width: 500%;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 1500%; /* Ensures the input fields fill the container */
+  padding: 1rem; /* Adds padding inside the input fields */
+  background-color: #000; /* Sets a black background */
+  color: #fff; /* Ensures text is white */
+  border: 2px solid #fff; /* Adds a white border */
+  border-radius: 0; /* Removes rounding from corners */
+  font-size: 0.7rem; /* Standard font size for inputs */
+  transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+  min-width: 100%;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none; /* Removes default outline */
+  border-color: #00ff00; /* Changes border color on focus */
+}
+
+.input-group textarea {
+  width: 300%; /* Makes the textarea wider */
+  height: 100px; /* Adds more height for message input */
+}
+
+/* Success/Error Message Styling */
+.form-message {
+  font-size: 0.9rem; /* Makes messages slightly smaller */
+  margin-bottom: 1rem; /* Adds spacing below the message */
+}
+
+.form-message.success {
+  color: #00ff00; /* Green for success messages */
+}
+
+.form-message.error {
+  color: #ff0000; /* Red for error messages */
+}
+
+/* Submit Button Styling */
+.btn-primary {
+  background-color: #000; /* Black button background */
+  color: #fff; /* White button text */
+  border: 2px solid #fff; /* Adds a white border */
+  padding: 0.75rem 2rem; /* Adds padding inside the button */
+  text-transform: uppercase; /* Converts text to uppercase */
+  font-weight: bold; /* Highlights button text */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #fff; /* Changes background to white on hover */
+  color: #000; /* Changes text to black on hover */
+}
+
+/* Blog Section Styling */
+.blog-entry {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 2rem 0; /* Adds spacing to the section */
+}
+
+.blog-entry .container {
   display: flex;
-  flex-wrap: wrap; /* Ensures wrapping in smaller screens */
-  justify-content: center; /* Horizontally center grid items */
-  gap: 1rem; /* Adds space between columns */
+  align-items: center;
+  justify-content: space-between;
 }
 
+.text-content {
+  text-align: left; /* Aligns text to the left */
+  justify-content: center; /* Centers content vertically */
+}
+
+.text-content h2 {
+  font-size: 2rem; /* Heading font size */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.text-content .section-heading-upper {
+  font-size: 1rem;
+  text-transform: uppercase; /* Uppercase styling */
+  color: #aaa; /* Subdued gray color for the date */
+}
+
+.text-content .section-heading-lower {
+  font-size: 2.5rem; /* Larger size for the main title */
+  font-weight: bold;
+}
+
+.post-content {
+  text-align: justify; /* Justifies the post content */
+  line-height: 1.8; /* Improves readability */
+  margin-bottom: 1.5rem; /* Space below the content */
+}
+
+.post-meta {
+  font-size: 0.9rem; /* Smaller size for meta info */
+  color: #ddd; /* Subtle gray color */
+}
+
+.category-link {
+  color: #1bc20c; /* Green color for categories */
+  text-decoration: none; /* Removes underline */
+}
+
+.category-link:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Image Styling */
+.image-container img {
+  width: 100%; /* Ensures the image fills the container */
+  border-radius: 0.5rem; /* Optional: Slight rounding on image corners */
+  margin-left: auto; /* Aligns image to the right */
+}
+
+/* General Page Section Styling */
+.page-section {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 4rem 0; /* Adds spacing to the sections */
+}
+
+/* Header Section Styling */
+.header-section .text-content {
+  text-align: left; /* Aligns text to the left */
+}
+
+.header-section h2 {
+  margin-bottom: 1.5rem; /* Adds space below the heading */
+}
+
+.header-section .section-heading-upper {
+  font-size: 1.2rem; /* Adjusts font size for subtitle */
+  text-transform: uppercase; /* Uppercase styling */
+  color: #aaa; /* Subtle gray color */
+}
+
+.header-section .section-heading-lower {
+  font-size: 2.5rem; /* Larger size for the main title */
+  font-weight: bold; /* Makes the title bold */
+}
+
+.header-section p {
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.8; /* Adds line spacing for readability */
+}
+
+.header-section .btn-primary {
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  border: 2px solid #fff; /* Adds a white border */
+  padding: 0.75rem 2rem; /* Adds padding */
+  text-transform: uppercase; /* Uppercase button text */
+  font-weight: bold; /* Makes text bold */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.header-section .btn-primary:hover {
+  background-color: #000; /* Black background on hover */
+  color: #fff; /* White text on hover */
+  border-color: #fff; /* Maintains the white border */
+}
+
+/* Image Styling */
+.header-section img {
+  width: 100%; /* Ensures the image is responsive */
+  border-radius: 0.5rem; /* Optional: Slight rounding for aesthetic */
+}
+
+/* Message Section Styling */
+.cta .section-heading {
+  margin-bottom: 2rem; /* Adds space below the heading */
+}
+
+.cta .section-heading-upper {
+  font-size: 1.2rem; /* Adjusts font size for subtitle */
+  text-transform: uppercase; /* Uppercase styling */
+  color: #aaa; /* Subtle gray color */
+}
+
+.cta .section-heading-lower {
+  font-size: 2.5rem; /* Larger size for the main title */
+  font-weight: bold; /* Makes the title bold */
+}
+
+.cta p {
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.8; /* Adds line spacing for readability */
+  text-align: justify; /* Justifies the text for a clean layout */
+}

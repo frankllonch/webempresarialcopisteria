@@ -5,46 +5,47 @@
 {% block title %}Visítanos | the orange copy{% endblock %}
 
 {% block content %}
-<section class="page-section cta">
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-9 mx-auto">
-        <div class="cta-inner text-center rounded">
-          <h2 class="section-heading mb-5">
-            <span class="section-heading-upper">Te esperamos</span>
-            <span class="section-heading-lower">Visítanos</span>
-          </h2>
-          <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-            <li class="list-unstyled-item list-hours-item d-flex">
-              Lunes
-              <span class="ml-auto">Cerrado</span>
-            </li>
-            <li class="list-unstyled-item list-hours-item d-flex">
-              Martes a jueves
-              <span class="ml-auto">7:30–11:30 p.m.</span>
-            </li>
-            <li class="list-unstyled-item list-hours-item d-flex">
-              Viernes y sábados
-              <span class="ml-auto">7:30 p.m.–12 a.m.</span>
-            </li>
-            <li class="list-unstyled-item list-hours-item d-flex">
-              Domingos
-              <span class="ml-auto">Cerrado</span>
+<section class="page-section visit-us">
+  <div class="visit-container">
+    <!-- Left Side: Image -->
+    <div class="visit-image">
+      <img src="{% static 'core/img/map.png' %}" alt="Map Image">
+    </div>
 
-            </li>
-          </ul>
-          <p class="address mb-5">
-            <em>
-              <strong>C/JACINTO BENAVENTE LICAL 3 </strong>
-              <br>Villanueva de la Cañada, Madrid
-            </em>
-          </p>
-          <p class="mb-0">
-            <small><em>Contacta con nosotros para reservar, cumpleaños o lo que sea necesario</em></small>
-            <br>918 157 126
-          </p>
-        </div>
-      </div>
+    <!-- Right Side: Text Content -->
+    <div class="visit-content">
+      <h2 class="section-heading">
+        <span class="section-heading-upper">Te esperamos</span>
+        <span class="section-heading-lower">Visítanos</span>
+      </h2>
+      <ul class="list-unstyled list-hours">
+        <li class="list-hours-item">
+          Lunes
+          <span>Cerrado</span>
+        </li>
+        <li class="list-hours-item">
+          Martes a jueves
+          <span>7:30–11:30 p.m.</span>
+        </li>
+        <li class="list-hours-item">
+          Viernes y sábados
+          <span>7:30 p.m.–12 a.m.</span>
+        </li>
+        <li class="list-hours-item">
+          Domingos
+          <span>Cerrado</span>
+        </li>
+      </ul>
+      <p class="address">
+        <em>
+          <strong>C/JACINTO BENAVENTE LICAL 3</strong>
+          <br>Villanueva de la Cañada, Madrid
+        </em>
+      </p>
+      <p>
+        <small><em>Contacta con nosotros para reservar, cumpleaños o lo que sea necesario</em></small>
+        <br>918 157 126
+      </p>
     </div>
   </div>
 </section>

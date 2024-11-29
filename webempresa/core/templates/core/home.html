@@ -3,40 +3,43 @@
 {% block title %}Inicio{% endblock %}
 
 {% block content %}
-		<!-- Cabecera -->
-		<section class="page-section clearfix">
-			<div class="container">
-				<div class="intro">
-					<img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/intro_me.png' %}" alt="">
-					<div class="intro-text left-0 text-center bg-faded p-5 rounded">
-						<h2 class="section-heading mb-4">
-							<span class="section-heading-upper">IMPRIME TU SUEÑOS</span>
-							<span class="section-heading-lower">¿NOS CONOCES?</span>
-						</h2>
-						<p class="mb-3">Desde 1999 ofreciendo los mejores PRODUCTOS de impresión, serigrafía y rotulación en cualquier formato 
-						</p>
-						<div class="intro-button mx-auto">
-							<a class="btn btn-primary btn-xl" href="{% url 'store' %}">Visítanos</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+<!-- Header Section -->
+<section class="page-section header-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left: Text Content -->
+      <div class="col-md-7 text-content">
+        <h2 class="section-heading">
+          <span class="section-heading-upper">IMPRIME TUS SUEÑOS</span>
+          <span class="section-heading-lower">¿NOS CONOCES?</span>
+        </h2>
+        <p class="mb-3">
+          Desde 1999 ofreciendo los mejores productos de impresión, serigrafía y rotulación en cualquier formato.
+        </p>
+        <a class="btn btn-primary" href="{% url 'store' %}">Visítanos</a>
+      </div>
+      <!-- Right: Image -->
+      <div class="col-md-5">
+        <img class="img-fluid rounded" src="{% static 'core/img/intro_me.png' %}" alt="Intro Image">
+      </div>
+    </div>
+  </div>
+</section>
 
-		<!-- Mensaje -->
-		<section class="page-section cta">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-9 mx-auto">
-						<div class="cta-inner text-center rounded">
-							<h2 class="section-heading mb-4">
-								<span class="section-heading-upper">GARANTIZAMOS ALTA CALIDAD EN IMPRESIONES SIN PÉRDIDA DE COLOR</span>
-								<span class="section-heading-lower">LA TINTA MOLA</span>
-							</h2>
-							<p class="mb-0">Trabajamos con las principales marcas que garantizan unos buenos resultados en las impresiones de nuestra maquinaria. Realizamos impresiones de alta calidad en prendas tanto oscuras como claras y en todo tipo de prenda textil que elija nuestro cliente.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+<!-- Message Section -->
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2 class="section-heading">
+          <span class="section-heading-upper">GARANTIZAMOS ALTA CALIDAD EN IMPRESIONES SIN PÉRDIDA DE COLOR</span>
+          <span class="section-heading-lower">LA TINTA MOLA</span>
+        </h2>
+        <p class="mb-3">
+          Trabajamos con las principales marcas que garantizan unos buenos resultados en las impresiones de nuestra maquinaria. Realizamos impresiones de alta calidad en prendas tanto oscuras como claras y en todo tipo de prenda textil que elija nuestro cliente.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
